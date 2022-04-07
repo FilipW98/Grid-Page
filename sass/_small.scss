@@ -1,0 +1,62 @@
+@media (min-width: 576px) {
+	.info {
+		grid-template-areas:
+			'title box'
+			'title box'
+			'title box';
+		padding: 10em 2em;
+
+		&__box {
+			display: grid;
+			justify-content: end;
+		}
+
+		&__title {
+			padding: 0em 1em;
+		}
+
+		&__box-img,
+		&__box-text {
+			max-width: 500px;
+		}
+
+        &__box-title{
+            padding: 0.5em 0em;
+        }
+
+        &__bg-icon{
+            display: block;
+            position: absolute;
+
+            &--one{
+                top: 10%;
+                left: 42%;
+                width: 12%;
+                opacity: 0.05;
+                animation: rotate-right 95s infinite linear;
+            }
+
+            &--two{
+                bottom: 33%;
+                left: -15%;
+                width: 22%;
+                opacity: 0.05;
+                animation: rotate-right 125s infinite linear;
+            }
+            &--three{
+                top: 27%;
+                left: 5%;
+                width: 35%;
+                opacity: 0.05;
+                animation: rotate-left 140s infinite linear;
+            }
+            &--four{
+                bottom: 15%;
+                left: 25%;
+                width: 15%;
+                opacity: 0.05;
+                animation: rotate-left 110s infinite linear;
+            }
+        }
+	}
+}
